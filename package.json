@@ -1,5 +1,5 @@
 {
-  "name": "roit-base-lib",
+  "name": "roit-test-helper",
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "src/index.ts",
@@ -29,8 +29,12 @@
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
+    "setupFilesAfterEnv": [
+        "<rootDir>/test/fixture/index.ts"
+    ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testTimeout": 3000
   },
   "keywords": []
 }
