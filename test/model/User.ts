@@ -5,5 +5,5 @@ export class User {
 
     age: number
 
-    address: string
+    Addresss: string
 }

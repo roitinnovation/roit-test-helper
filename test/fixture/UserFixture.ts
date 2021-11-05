@@ -7,14 +7,19 @@ export class UserFixture implements TemplateLoader {
     load(): void {
         
         FixtureBuilder.add<User>('USER_FIXTURE_1', {
-            address: 'Addres 1',
+            Addresss: 'Address 1',
             age: 40,
             name: 'Maria'
         })
 
         FixtureBuilder.add<User>('USER_FIXTURE_2', {
-            address: 'Addres 2',
+            Addresss: 'Address 2',
             age: 40,
+            name: 'Maria'
+        })
+
+        FixtureBuilder.add<User>('USER_FIXTURE_3', {
+            Addresss: 'Address 3',
             name: 'Maria'
         })
     }
